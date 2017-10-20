@@ -6,6 +6,7 @@ var player = {
 	pacMouth: 320,
 	pacDirection: 0,
 	psize: 32
+	var speed = 5;
 }
 
 
@@ -20,11 +21,7 @@ mainImage.onload = checkReady;
 mainImage.src = "pac.png";
 document.body.appendChild(canvas);
 
-//var klick={};
-//document.addEventListener("keydown",function (event){
-//	klick[event.keyCode];
-//	console.log(klick);
-//}, false);
+
 
 document.addEventListener("keydown", klick);
 
@@ -37,7 +34,7 @@ function klick() {
 function move(klik) {
 
 	var kC = event.keyCode;
-	var speed = 5;
+
 	switch (kC) {
 		case 39: //right
 
@@ -93,7 +90,7 @@ function render() {
 	if (player.y < 1) {
 		player.y = 5;
 	}
-
+	//---frame
 
 
 }
